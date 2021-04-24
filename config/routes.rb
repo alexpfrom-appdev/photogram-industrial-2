@@ -10,8 +10,8 @@ Rails.application.routes.draw do
 
   get ":username/liked" => "photos#liked", as: :liked_photos
   get ":username/feed" => "photos#feed", as: :feed
-  # get ":username/followers" => "photos#followers", as: :liked_photos
-  # get ":username/following" => "photos#liked", as: :liked_photos
+  get ":username/followers" => "photos#followers", as: :follwers
+  get ":username/following" => "photos#following", as: :following
 
   get ":username" => "users#show", as: :user
 end
